@@ -16,6 +16,7 @@ computes the ``l``-th Legendre Polynomial at `x`.
 ```jldoctest
 julia> dnPl(1, 2,0)
 1.0
+```
 """
 Pl(x,l::Int)=dnPl(x,l,0)
 
