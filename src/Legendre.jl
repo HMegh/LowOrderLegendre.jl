@@ -29,7 +29,7 @@ julia> dnPl(1, 2,0)
 1.0
 
 julia> dnPl(.3,10,4)
-3434.5883446875
+3434.588344687501
 ```
 """
 function dnPl(x::N,l::Int,k::Int) where N<:Number
