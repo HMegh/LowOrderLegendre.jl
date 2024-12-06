@@ -1,10 +1,10 @@
 
-X=Polynomial([0,1])
-ONE= Polynomial([1])
+X=Polynomial([0.0,1.0])
+ONE= Polynomial([1.0])
 function p(n) 
     if n==0 return ONE end 
     if n==1 return X end 
-    return ((2n-1)//n)*X*p(n-1)-((n-1)//n)*p(n-2)
+    return ((2n-1)/n)*X*p(n-1)-((n-1)/n)*p(n-2)
 end
 
 
