@@ -4,7 +4,7 @@ using Polynomials
 using Match
 import LegendrePolynomials #fallback
 
-export dnPl
+export dnPl,Pl
 
 
 include("Legendre.jl")

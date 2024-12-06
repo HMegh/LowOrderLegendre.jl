@@ -8,14 +8,30 @@ function p(n)
 end
 
 
+"""
+    Pl(x,l::Int)
 
+computes the ``l``-th Legendre Polynomial at `x`. 
+# Examples
+```jldoctest
+julia> dnPl(1, 2,0)
+1.0
+"""
+Pl(x,l::Int)=dnPl(x,l,0)
 
+"""
+    dnPl(x,l::Int,k::Int)
 
+computes the ``k``-th derivative of the ``l``-th Legendre Polynomial at `x`. 
+# Examples
+```jldoctest
+julia> dnPl(1, 2,0)
+1.0
 
-
-
-
-
+julia> dnPl(.3,10,4)
+3434.5883446875
+```
+"""
 function dnPl(x::N,l::Int,k::Int) where N<:Number
     if l<0 error(DomainError(l,"l<0")) end
     if k>l return zero(float(x)) end 
